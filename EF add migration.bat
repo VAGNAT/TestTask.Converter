@@ -1,0 +1,1 @@
+dotnet ef migrations add "InitDatabase" --context PlumsailContext --project src\Plumsail.FileData\Infrastructure\Plumsail.FileData.Infrastructure.PostgreSql\Plumsail.FileData.Infrastructure.PostgreSql.csproj --startup-project src\Plumsail.FileData\Plumsail.FileData\Plumsail.FileData.csproj

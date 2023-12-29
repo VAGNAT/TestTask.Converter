@@ -1,0 +1,27 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Delete" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5000",
+    "CorsOptions": {
+      "policyName": "OcelotPolicy",
+      "CorsPolicy": {
+        "AllowedOrigins": [ "http://localhost:3000" ],
+        "AllowedMethods": [ "Get", "Post", "Put", "Delete" ],
+        "AllowedHeaders": [ "*" ]
+      }
+    }
+  }
+}

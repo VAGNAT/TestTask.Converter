@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\Plumsail.Application.Repositories\Plumsail.FileData.Application.Repositories.csproj" />
+    <ProjectReference Include="..\..\Application\Plumsail.Application\Plumsail.FileData.Application.csproj" />
+    <ProjectReference Include="..\..\Domain\Plumsail.FileData.Domain\Plumsail.FileData.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
